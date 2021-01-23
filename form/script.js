@@ -36,7 +36,7 @@ function checkLenght(input,min, max){
 }
 function checkPasswordLenght(input1,input2){
     if(input1.value !== input2.value){
-        showError(input2, 'password doesnot match')
+        showError(input, 'password doesnot match')
     }
 }
 function getFieldName(input){
