@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    max-height: 100vh;
+    margin: 0;
+    background-color: #666;
+  }
+
+h1{
+    color: white;
+}
+.screen{
+    cursor: pointer;
+    width: 50%;
+    background-color: black !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.controls{
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.controls .btn{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.fa-play{
+    color: green;
+}
+.fa-stop{
+    color: red;
+}
+.fa-pause{
+    color: white;
+}
+.controls .timeStamp{
+    color:white ;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.btn:focus{
+    outline: 0;
+}
+@media(max-width : 800px){
+    .screen, .controls{
+        width: 90%;
+    }
+}
