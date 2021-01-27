@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+:root{
+    --primary-color: #32CD32;
+
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  h1{
+      color: var(--primary-color);
+  }
+  p{
+      text-align: center;
+  }
+  .btn{
+      color: white;
+      background-color: var(--primary-color);
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 15px;
+      padding: 5px 12px;
+      border-style: none;
+
+  }
+  select:focus, input:focus, button:focus{
+      outline: none;
+      border-style: none;
+  }
+
+  .currency{
+      padding: 40px 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .currency select{
+      padding: 8px 20px;
+      border: 1px solid #ddd;
+      font-size: 15px;
+  }
+  .currency input{
+      border: 0;
+    background: transparent;
+    font-size: 16px;
+    text-align: right;
+  }
+  .swap-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .rate{
+      color: var(--primary-color);
+      font-size: 14px;
+      padding: 0px 13px;
+  }
+  @media(max-width: 600px){
+      .currency input{
+          width: 200px;
+      }
+  }
